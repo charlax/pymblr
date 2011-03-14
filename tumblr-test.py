@@ -54,7 +54,7 @@ class TumblrTests(unittest.TestCase):
         post = api.read(newpost['id'])
         assert newpost['id'] == post['id']
 
-    newpost = api.write_link('http://www.google.com')
+    	newpost = api.write_link('http://www.google.com')
         post = api.read(newpost['id'])
         assert newpost['id'] == post['id']
 
